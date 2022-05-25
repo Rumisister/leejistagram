@@ -137,6 +137,11 @@
         background-size: cover;
         background-position: center;
 
+        &.button-add i {
+          margin-right: 22px;
+          font-size: 25px;
+        }
+
         &.button-explore {
           display: block;
           background-image: url(../../assets/images/explore.png);

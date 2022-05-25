@@ -1,7 +1,14 @@
 import React from "react";
 import "./Nav.scss";
+import { useNavigate } from "react-router-dom";
 
 function Nav() {
+  const navigate = useNavigate();
+
+  const goToAddFeed = () => {
+    navigate("/addfeed-hayoung");
+  };
+
   return (
     <header className="main-header">
       <nav className="gnb">
@@ -22,6 +29,9 @@ function Nav() {
         </div>
 
         <div className="gnb-button-group">
+          <button className="gnb-button button-add" onClick={goToAddFeed}>
+            <i class="fa-regular fa-square-plus"></i>
+          </button>
           <a
             className="gnb-button button-explore"
             href="#"
